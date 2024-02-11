@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="website icon" type="png" href="./src/imagem/icon_SFG.png">
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+        }
+        * {
+            box-sizing: border-box; 
+        }
+        form {
+            width: 300px;
+            margin: 200px auto;
+            text-align: center;
+        }
+        input {
+            display: block;
+            margin: 10px auto;
+            width: 250px;
+            height: 30px;
+            color: aqua;
+            border-radius: 30px;
+            border-color: aqua;
+        }
+        h1 {
+            font-size: 40px;
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1 id="title">Cadastro</h1>
+        <input type="text" placeholder="Usuario" id="user">
+        <input type="password" placeholder="Senha" id="pass">
+        <input type="submit" onclick="cadastro">
+    </form>
+    <script src="./login.html">
+        function cadastro() {
+            var user = document.getElementById(`user`).value;
+            var pass = document.getElementById(`pass`).value;
+            location.href = "login.html"
+        }
+    </script>
+</body>
+</html>

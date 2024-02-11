@@ -1,0 +1,5 @@
+@media (max-width: 760px) {
+    .container, .navbar-collapse, .navbar-form{
+        overflow-inline: auto;
+    }
+}

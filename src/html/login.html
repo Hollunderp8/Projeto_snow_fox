@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="website icon" type="png" href="./src/imagem/icon_SFG.png">
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+        }
+        * {
+            box-sizing: border-box; 
+        }
+        form {
+            width: 300px;
+            margin: 200px auto;
+            text-align: center;
+        }
+        input {
+            display: block;
+            margin: 10px auto;
+            width: 250px;
+            height: 30px;
+            color: aqua;
+            border-radius: 30px;
+            border-color: aqua;
+        }
+        h1 {
+            font-size: 40px;
+            color: aqua;
+        }
+        #chk {
+            scale: 50%;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1 id="title">Login</h1>
+        <input type="text" placeholder="Usuario" id="user1">
+        <input type="password" placeholder="Senha" id="pass1">
+        <input type="submit" onclick="login; return false">
+        <input type="checkbox" id="chk">Mostrar Senha
+    </form>
+    <script src="./cadastro.html">
+        const user1 = document.getElementById(`user1`).value;
+        const pass1 = document.getElementById(`pass1`).value;
+        const chk = document.getElementById(`chk`)
+        function login() {
+            if (user1 == `paulo` && pass1 == `123`) {
+                alert(`Muito bem`)
+                location.href = "sfg.html"
+            }else {
+                alert("Falhou")
+                location.href = "sfg.html"
+            }
+        }
+        chk.onchange = function (e) {
+            pass1.type = chk.checked ? "text" : "password"
+        }
+    </script>
+</body>
+</html>
