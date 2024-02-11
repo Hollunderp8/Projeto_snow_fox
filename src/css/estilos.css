@@ -57,6 +57,16 @@
     cursor: pointer;
 }
 /*menu*/
+#menu:hover {
+    width: 200px;
+}
+#menu:hover #text-link {
+    margin-left: 40px;
+    opacity: 1;
+}
+.item-menu:hover {
+    background-color: rgb(127, 172, 255);
+}
 #menu {
     width: 50px;
     height: 81vh;
@@ -66,15 +76,9 @@
     transition: .5s;
     overflow: hidden;
     position: absolute;
+    z-index: 1;
 }
-#menu:hover {
-    width: 200px;
-}
-#menu:hover #text-link {
-    margin-left: 40px;
-    opacity: 1;
-}
- ul li.item-menu a {
+ul li.item-menu a {
     color: blue;
     text-decoration: none;
     font-size: 20px;
@@ -94,9 +98,6 @@ ul li.item-menu a #text-link {
 }
 ul li.item-menu a #icon {
    font-size: 30px;
-}
-.item-menu:hover {
-    background-color: rgb(127, 172, 255);
 }
 .item-menu {
     transition: .5s;
