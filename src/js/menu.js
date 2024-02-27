@@ -13,11 +13,7 @@ item.forEach((item, indice) =>{
     })
 })
 
-function cadastro(){
-    alert(`Em Breve`)
-    //location.href = "cadastro.html";
-}
 function login(){
-    alert(`Em Breve`)
-    //location.href = "login.html";
+    confirm(`Olá! Aqui é uma área dedicada a membros da equipe. Sera liberado para o público em breve.`)
+    location.href = "./src/html/login.html";
 }
